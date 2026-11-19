@@ -99,17 +99,17 @@ ENTREGA .ZIP CONTENDO:
 - Arquivo .sql de criação do banco de dados.
 
 config/
-conexao.php
+conexao.php -> ok
 
 models/
-Funcionario_comum.php
+Funcionario_comum.php ->ok
 Funcionario.php
-Gerente.php
+Gerente.php-> ok
 
 views/
-cadastro.php
-lista.php
+cadastro.php -> ok
+lista.php -> ok
 
-banco.sql
-index.php
-style.css
+banco.sql -> ok
+index.php ->ok
+style.css ->ok

@@ -1,9 +1,13 @@
-   <?php if ($funcionarioParaExcluir !== null): ?>
+<section class="card">
+    <h2>Funcionários Cadastrados</h2>
+
+    <?php if ($funcionarioParaExcluir !== null): ?>
         <div class="confirmacao-box">
             <p>
                 Tem certeza que deseja excluir o funcionário
                 <strong><?= htmlspecialchars($funcionarioParaExcluir->getNome(), ENT_QUOTES, 'UTF-8') ?></strong>
-                </p>
+                (<?= htmlspecialchars($funcionarioParaExcluir->getEmail(), ENT_QUOTES, 'UTF-8') ?>)?
+            </p>
             <form method="POST" action="index.php" class="inline-form">
                 <input type="hidden" name="acao" value="confirmar_exclusao">
                 <input type="hidden" name="id" value="<?= (int) $funcionarioParaExcluir->getId() ?>">
@@ -51,7 +55,8 @@
                             </td>
                         </tr>
                     <?php endforeach; ?>
-                </body>
+                </tbody>
             </table>
         </div>
-        ?>
+    <?php endif; ?>
+</section>
